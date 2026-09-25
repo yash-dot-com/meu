@@ -1,2 +1,8 @@
+node_modules/
+dist/
+.next/
+
 .env
-/node_modules
+.env.local
+
+artifacts/
