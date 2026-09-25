@@ -1,0 +1,373 @@
+{
+  "targets": [
+    {
+      "intent": "Products",
+      "role": "link",
+      "names": [
+        "Products"
+      ],
+      "href": "/products",
+      "path": "/products"
+    },
+    {
+      "intent": "View Product",
+      "role": "link",
+      "names": [
+        "View Product"
+      ],
+      "href": "/product/1",
+      "path": "/product/1"
+    },
+    {
+      "intent": "Add to Cart",
+      "role": "link",
+      "names": [
+        "Add to Cart"
+      ],
+      "href": "/cart",
+      "path": "/cart"
+    },
+    {
+      "intent": "Checkout",
+      "role": "link",
+      "names": [
+        "Checkout"
+      ],
+      "href": "/checkout",
+      "path": "/checkout"
+    },
+    {
+      "intent": "Proceed to Payment",
+      "role": "link",
+      "names": [
+        "Proceed to Payment"
+      ],
+      "href": "/payment?mutation=1",
+      "path": "/payment"
+    },
+    {
+      "intent": "Pay Now",
+      "role": "link",
+      "names": [
+        "Pay Now"
+      ],
+      "href": "/confirmation?mutation=1",
+      "path": "/confirmation"
+    }
+  ],
+  "states": [
+    {
+      "id": "state_a3865aa02da9",
+      "url": "http://127.0.0.1:53584/",
+      "title": "ShopFlow",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_a3865aa02da9.png"
+    },
+    {
+      "id": "state_fdc97b326ead",
+      "url": "http://127.0.0.1:53584/products",
+      "title": "Products",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_fdc97b326ead.png"
+    },
+    {
+      "id": "state_71544f793a9c",
+      "url": "http://127.0.0.1:53584/product/1",
+      "title": "MacBook Pro",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_71544f793a9c.png"
+    },
+    {
+      "id": "state_696a299eca60",
+      "url": "http://127.0.0.1:53584/cart",
+      "title": "Cart",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_696a299eca60.png"
+    },
+    {
+      "id": "state_456d2764cc70",
+      "url": "http://127.0.0.1:53584/checkout",
+      "title": "Checkout",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_456d2764cc70.png"
+    },
+    {
+      "id": "state_c2ac4ceb2554",
+      "url": "http://127.0.0.1:53584/cart?mutation=1",
+      "title": "Cart",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_c2ac4ceb2554.png"
+    },
+    {
+      "id": "state_6dec4851e41c",
+      "url": "http://127.0.0.1:53584/checkout?mutation=1",
+      "title": "Checkout",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_6dec4851e41c.png"
+    },
+    {
+      "id": "state_eaa6e2625fa3",
+      "url": "http://127.0.0.1:53584/payment?mutation=1",
+      "title": "Payment",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_eaa6e2625fa3.png"
+    },
+    {
+      "id": "state_23b5f06447a7",
+      "url": "http://127.0.0.1:53584/confirmation?mutation=1",
+      "title": "Order Confirmed",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_23b5f06447a7.png"
+    },
+    {
+      "id": "state_79b75b5de709",
+      "title": "Wishlist",
+      "url": "http://127.0.0.1:53647/wishlist",
+      "screenshot": "/Users/yash/Desktop/meu/artifacts/meu-demo/branch/after-branch.png"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "transition_5a0141faa77d",
+      "fromState": "state_a3865aa02da9",
+      "toState": "state_fdc97b326ead",
+      "intent": "Products",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_6dc10b81335c",
+      "fromState": "state_fdc97b326ead",
+      "toState": "state_71544f793a9c",
+      "intent": "View Product",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_103851412462",
+      "fromState": "state_71544f793a9c",
+      "toState": "state_696a299eca60",
+      "intent": "Add to Cart",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_24650f38fecf",
+      "fromState": "state_696a299eca60",
+      "toState": "state_456d2764cc70",
+      "intent": "Checkout",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_45a4814b6c06",
+      "fromState": "state_a3865aa02da9",
+      "toState": "state_fdc97b326ead",
+      "intent": "Products",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_04a146014dfc",
+      "fromState": "state_fdc97b326ead",
+      "toState": "state_71544f793a9c",
+      "intent": "View Product",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_d3bce71f8797",
+      "fromState": "state_71544f793a9c",
+      "toState": "state_c2ac4ceb2554",
+      "intent": "Add to Cart",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_8b5ab5797c2a",
+      "fromState": "state_c2ac4ceb2554",
+      "toState": "state_6dec4851e41c",
+      "intent": "Checkout",
+      "executor": "stagehand",
+      "recovered": true,
+      "verified": true
+    },
+    {
+      "id": "transition_92f2df345ac8",
+      "fromState": "state_6dec4851e41c",
+      "toState": "state_eaa6e2625fa3",
+      "intent": "Proceed to Payment",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_d984c79360fb",
+      "fromState": "state_eaa6e2625fa3",
+      "toState": "state_23b5f06447a7",
+      "intent": "Pay Now",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true
+    },
+    {
+      "id": "transition_7f376e5d1d06",
+      "fromState": "state_4de586a08a1f",
+      "toState": "state_79b75b5de709",
+      "intent": "Wishlist action for the MacBook Pro product, likely saves the item to a wishlist.",
+      "executor": "stagehand",
+      "recovered": false,
+      "verified": true
+    }
+  ],
+  "events": [
+    {
+      "id": "event_412c3ceeaf09",
+      "run": 1,
+      "intent": "Products",
+      "targetAttempted": "Products",
+      "targetResolvedAs": "Products",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_a3865aa02da9",
+      "toState": "state_fdc97b326ead",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_a3865aa02da9.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_fdc97b326ead.png",
+      "durationMs": 102
+    },
+    {
+      "id": "event_0794ce6e495c",
+      "run": 1,
+      "intent": "View Product",
+      "targetAttempted": "View Product",
+      "targetResolvedAs": "View Product",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_fdc97b326ead",
+      "toState": "state_71544f793a9c",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_fdc97b326ead.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_71544f793a9c.png",
+      "durationMs": 95
+    },
+    {
+      "id": "event_97377ad55a0e",
+      "run": 1,
+      "intent": "Add to Cart",
+      "targetAttempted": "Add to Cart",
+      "targetResolvedAs": "Add to Cart",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_71544f793a9c",
+      "toState": "state_696a299eca60",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_71544f793a9c.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_696a299eca60.png",
+      "durationMs": 84
+    },
+    {
+      "id": "event_b4cdb1aeeab4",
+      "run": 1,
+      "intent": "Checkout",
+      "targetAttempted": "Checkout",
+      "targetResolvedAs": "Checkout",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_696a299eca60",
+      "toState": "state_456d2764cc70",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_696a299eca60.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_456d2764cc70.png",
+      "durationMs": 83
+    },
+    {
+      "id": "event_d283755ccfcf",
+      "run": 2,
+      "intent": "Products",
+      "targetAttempted": "Products",
+      "targetResolvedAs": "Products",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_a3865aa02da9",
+      "toState": "state_fdc97b326ead",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_a3865aa02da9.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_fdc97b326ead.png",
+      "durationMs": 87
+    },
+    {
+      "id": "event_6421df59198c",
+      "run": 2,
+      "intent": "View Product",
+      "targetAttempted": "View Product",
+      "targetResolvedAs": "View Product",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_fdc97b326ead",
+      "toState": "state_71544f793a9c",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_fdc97b326ead.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_71544f793a9c.png",
+      "durationMs": 80
+    },
+    {
+      "id": "event_2cafb88e9e95",
+      "run": 2,
+      "intent": "Add to Cart",
+      "targetAttempted": "Add to Cart",
+      "targetResolvedAs": "Add to Cart",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_71544f793a9c",
+      "toState": "state_c2ac4ceb2554",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_71544f793a9c.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_c2ac4ceb2554.png",
+      "durationMs": 83
+    },
+    {
+      "id": "event_c0ebe79232b0",
+      "run": 2,
+      "intent": "Checkout",
+      "targetAttempted": "Checkout",
+      "targetResolvedAs": "Checkout",
+      "executor": "stagehand",
+      "recovered": true,
+      "verified": true,
+      "fromState": "state_c2ac4ceb2554",
+      "toState": "state_6dec4851e41c",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/stagehand/stagehand-before.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/stagehand/stagehand-after.png",
+      "durationMs": 2142
+    },
+    {
+      "id": "event_ae00a9181344",
+      "run": 2,
+      "intent": "Proceed to Payment",
+      "targetAttempted": "Proceed to Payment",
+      "targetResolvedAs": "Proceed to Payment",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_6dec4851e41c",
+      "toState": "state_eaa6e2625fa3",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_6dec4851e41c.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_eaa6e2625fa3.png",
+      "durationMs": 83
+    },
+    {
+      "id": "event_b08fb070aa4a",
+      "run": 2,
+      "intent": "Pay Now",
+      "targetAttempted": "Pay Now",
+      "targetResolvedAs": "Pay Now",
+      "executor": "playwright",
+      "recovered": false,
+      "verified": true,
+      "fromState": "state_eaa6e2625fa3",
+      "toState": "state_23b5f06447a7",
+      "screenshotBefore": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_eaa6e2625fa3.png",
+      "screenshotAfter": "/Users/yash/Desktop/meu/artifacts/meu-demo/screenshots/state_23b5f06447a7.png",
+      "durationMs": 84
+    }
+  ]
+}
